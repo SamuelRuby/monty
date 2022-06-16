@@ -132,4 +132,4 @@ void free_everything(char **args);
 /* free.c */
 void free_all(int all);
 
-#endif /* MONTY_H */
+#endif

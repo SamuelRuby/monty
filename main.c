@@ -16,6 +16,7 @@ void monty(args_t *args)
 	size_t len = 0;
 	int get = 0;
 	void (*code_func)(stack_t **, unsigned int);
+
 	if (args->ac != 2)
 	{
 		dprintf(STDERR_FILENO, USAGE);
@@ -66,6 +67,7 @@ int main(int argc, char *argv[])
 	args.av = argv[1];
 	args.ac = argc;
 	args.line_number = 0;
+
 	monty(&args);
 
 	return (EXIT_SUCCESS);
