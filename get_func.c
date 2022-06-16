@@ -4,7 +4,6 @@
 /**
  * get_func - selects the right function
  * @parsed: line from the bytecode file passed to main
- *
  * Return: pointer to the selected function, or NULL on failure
  */
 void (*get_func(char **parsed))(stack_t **, unsigned int)
@@ -51,7 +50,7 @@ void push_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
 	int num = 0, i;
-
+	
 	if (data.words[1] == NULL)
 	{
 		dprintf(STDERR_FILENO, PUSH_FAIL, line_number);
