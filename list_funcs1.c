@@ -41,7 +41,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 
 	new->n = n;
-
 	new->next = *head;
 	new->prev = NULL;
 
@@ -81,7 +80,6 @@ size_t print_dlistint(const dlistint_t *h)
  * at a given index
  * @head: double pointer to the list
  * @index: index of the node to delete
- *
  * Return: 1 on success, -1 on failure
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)

@@ -9,10 +9,10 @@ void free_all(int all)
 {
 	if (data.line)
 	{
-		free(data.line);
-		data.line = NULL;
 		free_everything(data.words);
 		data.words = NULL;
+		free(data.line);
+		data.line =NULL;
 	}
 
 	if (all)

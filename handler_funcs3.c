@@ -2,9 +2,9 @@
 #include "lists.h"
 
 /**
- * rotl_handler - handles the rotl instruction
+ * rotl_handler - handles the rotl command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void rotl_handler(stack_t **stack, unsigned int line_number)
 {
@@ -22,9 +22,9 @@ void rotl_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * rotr_handler - handles the rotr instruction
+ * rotr_handler - handles the rotr command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void rotr_handler(stack_t **stack, unsigned int line_number)
 {
@@ -42,9 +42,9 @@ void rotr_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * stack_handler - handles the stack instruction
+ * stack_handler - handles the stack command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void stack_handler(stack_t **stack, unsigned int line_number)
 {
@@ -53,11 +53,10 @@ void stack_handler(stack_t **stack, unsigned int line_number)
 	data.qflag = 0;
 }
 
-
 /**
- * queue_handler - handles the queue instruction
+ * queue_handler - handles the queue command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void queue_handler(stack_t **stack, unsigned int line_number)
 {

@@ -2,9 +2,9 @@
 #include "lists.h"
 
 /**
- * sub_handler - handles the sub instruction
+ * sub_handler - handles the sub command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void sub_handler(stack_t **stack, unsigned int line_number)
 {
@@ -12,7 +12,7 @@ void sub_handler(stack_t **stack, unsigned int line_number)
 	stack_t *node = NULL;
 	stack_t *node_0 = get_dnodeint_at_index(*stack, 0);
 	stack_t *node_1 = get_dnodeint_at_index(*stack, 1);
-
+	
 	if (dlistint_len(*stack) < 2)
 	{
 		dprintf(STDERR_FILENO, SUB_FAIL, line_number);
@@ -33,9 +33,9 @@ void sub_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div_handler - handles the div instruction
+ * div_handler - handles the div command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void div_handler(stack_t **stack, unsigned int line_number)
 {
@@ -71,9 +71,9 @@ void div_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul_handler - handles the mul instruction
+ * mul_handler - handles the mul command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void mul_handler(stack_t **stack, unsigned int line_number)
 {
@@ -102,9 +102,9 @@ void mul_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod_handler - handles the mod instruction
+ * mod_handler - handles the mod command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void mod_handler(stack_t **stack, unsigned int line_number)
 {

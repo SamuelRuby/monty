@@ -4,7 +4,7 @@
 /**
  * pchar_handler - handles the pchar instruction
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void pchar_handler(stack_t **stack, unsigned int line_number)
 {
@@ -31,7 +31,7 @@ void pchar_handler(stack_t **stack, unsigned int line_number)
 /**
  * pstr_handler - handles the pstr instruction
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void pstr_handler(stack_t **stack, unsigned int line_number)
 {
@@ -50,6 +50,5 @@ void pstr_handler(stack_t **stack, unsigned int line_number)
 		putchar(node->n);
 		node = node->next;
 	}
-
 	putchar('\n');
 }
