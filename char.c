@@ -45,7 +45,7 @@ void pstr_handler(stack_t **stack, unsigned int line_number)
 		return;
 	}
 
-	while (node && node->n != 0 && node->n >= 0 && node->n < 128)
+	while (node && node->n != 0 && node->n >= 0 && node->n <= 127)
 	{
 		putchar(node->n);
 		node = node->next;
