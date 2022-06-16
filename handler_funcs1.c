@@ -2,14 +2,13 @@
 #include "lists.h"
 
 /**
- * pint_handler - handles the pint instruction
+ * pint_handler - handles the pint command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void pint_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *head = *stack;
-
 	if (!head)
 	{
 		dprintf(STDERR_FILENO, PINT_FAIL, line_number);
@@ -21,14 +20,13 @@ void pint_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pop_handler - handles the pop instruction
+ * pop_handler - handles the pop command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void pop_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;
-
 	if (!temp)
 	{
 		dprintf(STDERR_FILENO, POP_FAIL, line_number);
@@ -40,9 +38,9 @@ void pop_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * swap_handler - handles the swap instruction
+ * swap_handler - handles the swap command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void swap_handler(stack_t **stack, unsigned int line_number)
 {
@@ -69,9 +67,9 @@ void swap_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add_handler - handles the add instruction
+ * add_handler - handles the add command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void add_handler(stack_t **stack, unsigned int line_number)
 {
@@ -100,9 +98,9 @@ void add_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * nop_handler - handles the nop instruction
+ * nop_handler - handles the nop command
  * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * @line_number: number of the lines in the file
  */
 void nop_handler(stack_t **stack, unsigned int line_number)
 {
